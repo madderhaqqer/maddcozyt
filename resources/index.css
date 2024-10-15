@@ -48,16 +48,50 @@ body {
    /* margin-top: 9.5px; */
 }
 
-figure {
+/*figure {
     border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .figure img {
     height: 700px;
     width: 1200px;
     border: 1px solid red;
+}
 
 figcaption {
     color: seashell;
     border: 1px solid green;
+    margin: 0;
+    padding: 0;
+}*/
+
+.figure {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative; /* Create a positioning context */
+    height: 700px; /* Set a height for demonstration */
+    width: 1200px; /* Set a width for demonstration */
+    margin: 0 auto;
+}
+
+.figure img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+
+.figure figcaption {
+    position: absolute; /* Position it on top */
+    top: 50%; /* Align to the top */
+    left: 50%; /* Center horizontally */
+    width: 100%;
+    transform: translateX(-50%); /* Center the element */
+    background-color: black; /* Background for visibility */
+    color: seashell;
+    padding: 10px; /* Add some padding */
 }
